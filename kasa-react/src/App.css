@@ -1,25 +1,21 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbar{
+  display: flex;
+  align-items: center;
+  gap: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+.navliens{
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  font-family:sans-serif;
+  
 }
 
 
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.navliens a:hover{
+  border-bottom: 1px solid black;
 }
 
 

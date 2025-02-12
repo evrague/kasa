@@ -8,9 +8,7 @@ import Footer from "./footer";
 export default function Hotels(){
     return(
         <div>
-            <Nav />
             <h2>Je suis le corps de la page</h2>
-            <Footer />
 
         </div>
     );

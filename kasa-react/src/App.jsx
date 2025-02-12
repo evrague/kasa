@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import Hotels from './Components/Hotels'
 import './App.css'
+import Essai from './Components/essai'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-    <Hotels />      
+    <Essai />      
     </>
   )
 }
