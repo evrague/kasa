@@ -1,15 +1,22 @@
 import React from "react";
-import Nav from "./Nav";
-import Footer from "./footer";
 
 
 
 
 export default function Hotels(){
     return(
-        <div>
-            <h2>Je suis le corps de la page</h2>
+        <div className="flex bg-gris">
+            <div className="cartes">
+            <div className="carte"><p>carte1</p></div>
+            <div className="carte"><p>carte2</p></div>
+            <div className="carte"><p>carte3</p></div>
+            <div className="carte"><p>carte4</p></div>
+            <div className="carte"><p>carte5</p></div>
+            <div className="carte"><p>carte6</p></div>
+       
 
+                
+            </div>
         </div>
     );
 }

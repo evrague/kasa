@@ -2,12 +2,13 @@ import React from "react";
 import Nav from "./Nav";
 import Hotels from "./Hotels";
 import Footer from "./footer";
+import Banner from "./Banner";
 
 export default function Essai(){
    return (
         <div>
             <Nav />
-            <h1>Je suis la page essai</h1>
+            <Banner />
             <Hotels />
             <Footer />
 
