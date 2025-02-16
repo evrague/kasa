@@ -9,7 +9,7 @@ export default function Apropos(){
         <div>
                 <Nav />
                 <Banner2 />
-                <Footer />
+           
         </div> )
 
 }
