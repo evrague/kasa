@@ -11,7 +11,6 @@ export default function Essai(){
             <Banner />
             <Hotels />
             <Footer />
-
         </div>
    ); 
 }

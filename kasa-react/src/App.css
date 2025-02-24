@@ -5,6 +5,57 @@
   margin: 0;
 }
 
+.position-absolute{
+  position: absolute;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.left{
+  left: 10px;
+}
+
+.middle-bottom{
+  bottom: 0;
+  left: 50%;
+  color: white;
+
+}
+
+.top{
+  top: 40%;
+}
+
+.right{
+  right: 10px;
+}
+
+.w-65{
+  width: 65%;
+  height: 210px;
+}
+
+.rotate-180{
+  transform: rotate(180deg);
+}
+
+.symbols-diporama{
+  font-weight: bold;
+  font-size: 100px;
+  color: white;
+  line-height: 100px;
+  height: 100px;
+}
+
+.bg-black{
+  background-color: black;
+  padding: 30px;
+  color: white;
+  font-size: 20px;
+}
+
 .navbar{
   display: flex;
   align-items: center;
@@ -22,6 +73,14 @@
 }
 
 
+
+
+.navliens a{
+  font-style: none;
+  text-decoration: none;
+  color: black;
+}
+
 .navliens a:hover{
   border-bottom: 1px solid black;
 }
@@ -29,43 +88,57 @@
 .sectionheader{
   padding: 70px;
   border-radius: 20px;  
-  
   background-image: url("./assets/banner.png");
   width: 60%;
   background-size: cover;
   font-size: 50px;
   color: white;
 }
+
 .flex{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .cartes{
   margin-top: 30px;
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  padding: 35px;
+  padding: 30px;
   background-color: rgba(128, 128, 128, 0.06);
   width: 64%;
   border-radius: 10px;
   
 }
+
 .carte{
-  background-color: rgb(255 95 96);
-  padding: 20px;
-  height: 250px;
+  padding: 0px;
+  height: 340px;
   border-radius: 10px;
   color: white;
   font-size: 20px;
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+
+.carte img{
+  border-radius: 10px;
 }
 
 .carte p{
   position:absolute;
   bottom: 0;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 300px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(10, 10, 10, 0) 42%, rgba(4, 4, 4, 0.205) 99.99%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 .bannercontainer img{
@@ -75,6 +148,37 @@
     border-radius: 20px;
     filter: brightness(0.8);
     margin-bottom: 20px;
+}
+
+.bannercontainer2 #pp{
+  width: 65%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  filter: brightness(0.8);
+  margin-bottom: 20px;
+}
+
+.sectionheader p{
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.premier-plan{
+  z-index: 10;
+}
+
+.hidden-point{
+  color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 68%;
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.position-relative{
+  position: relative;
 }
 
 /* Footer */
@@ -127,8 +231,13 @@
 .tirroire img{
   position: absolute;
   right: 0;
-  
 }
+
+.tirroire p{
+  position: absolute;
+  left: 0;
+}
+
 
 .action-image{
   transition: 1s all ease;
@@ -138,8 +247,172 @@
   transform: rotate(180deg);
 }
 
-.tirroire p{
+
+
+
+/* La page Details logement */
+
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  gap: 20px;
+}
+
+.grid-n{
+  display: grid;
+  grid-template-columns: 160px 160px 160px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.div-gauche h5{
+  color: #fe615f;
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.div-gauche p{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.div-gauche .tags{
+  color: white;
+  text-align: center;
+  background-color: #fe615f;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid transparent;
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.host-pic{
+  border-radius: 65px;
+  width: 11%;
+}
+
+.host-name{
+  color: #fe615f;
+  width: 13%;
+  text-align: end;
+}
+
+.float-right{
+  float: right;
+  justify-content: flex-end;
+}
+
+.gap-10{
+  gap: 10px;
+  width: 100%;
+}
+
+.block{
+  display: block;
+}
+
+.tirroire-details{
+  background-color: rgb(255 95 96);
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  position: relative;
+  margin-top: 10px;
+  border: 10px solid rgb(255 95 96);
+}
+
+
+.tirroire-details img{
+  position: absolute;
+  right: 0;
+}
+
+.tirroire-details p{
   position: absolute;
   left: 0;
 }
 
+.width-ajuste{
+  width: 65%;
+}
+
+
+.stars{
+  float: right;
+  margin-top: 36px;
+}
+
+.grid-22{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 65%;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+
+/* Page 404 */
+.page-404{
+  
+}
+
+.message-404{
+  width: 597px;
+  height: 263px;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 410.69px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #FF6060;
+  margin-bottom: 180px;
+
+}
+
+.flex-direction-column{
+  flex-direction: column;
+}
+
+.oups{
+  font-weight: 500;
+  font-size: 36px;
+  letter-spacing: 0%;
+  color:#FF6060;
+  margin-bottom: 90px;
+}
+
+.retour-accueil{
+  margin-bottom: 50px;
+  color: black;
+}
+
+.tirroir-details-log > .coprs-tirroir{
+  padding: 15px;
+  margin-top: 2px !important;
+  width: 94% !important;
+  background-color: #fbfbfb;
+}
+
+.tirroir-details-log > .tirroire{
+  background-color: rgb(255 95 96);
+  border-radius: 8px;
+  padding: 15px;
+  color: white;
+  width: 90% !important;
+  font-weight: bolder;
+  font-size: 15px !important;
+  position: relative;
+  border: 10px solid rgb(255 95 96);
+}
+
+
+
+@media screen and (max-width: 786px){
+
+}
