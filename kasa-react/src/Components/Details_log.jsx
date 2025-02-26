@@ -14,6 +14,7 @@ export default function Details_log(){
 
     const { id } = useParams();
     const logement = data.find( (item) => item.id === id );
+    const nombre_images = logement.pictures.length;
     const rating_max = [" ", " ",  " ",  " ", " "];
     const [visible, setVisible] =  useState([false, false]);
     const [i, setI] = useState(0);
@@ -54,8 +55,18 @@ export default function Details_log(){
                     <img id="pp" src={logement.pictures[i]} alt="image de fond" />
                     
                     <div className="position-absolute w-65 top d-flex">
-                        <p className="position-absolute left rotate-180"> <img onClick={()=> desincrementer_i()} width={50} height={100} src={LeftImage} alt="" srcset="" />  </p>
-                        <p className="position-absolute right"> <img onClick={()=> incrementer_i()} width={50} height={100} src={LeftImage} alt="" srcset="" />  </p>
+                        <p className="position-absolute left rotate-180">  
+                            {
+                                nombre_images > 1 && <img onClick={()=> desincrementer_i()} width={50} height={100} src={LeftImage} alt="" srcset="" /> 
+                            }   
+                        </p>
+
+                        <p className="position-absolute right"> 
+                            {
+                                nombre_images > 1 && <img onClick={()=> incrementer_i()} width={50} height={100} src={LeftImage} alt="" srcset="" /> 
+                            } 
+                        </p>
+                        
                         <p className="position-absolute middle-bottom"> {i+1}/{logement.pictures.length}  </p>
                     </div>
                 </div>

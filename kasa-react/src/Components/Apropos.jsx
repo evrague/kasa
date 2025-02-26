@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Nav from "./Nav";
 import Footer from "./footer";
-import Banner2 from "./Banner2";
+import BannerApropos from "./BannerAprpos";
 import Tirroir from "./Tirroirs"
 
 
@@ -24,7 +24,7 @@ export default function Apropos(){
         return (
                 <div>
                         <Nav />
-                        <Banner2 />
+                        <BannerApropos />
                         <div id="test" className="tirroires flex">
                                 {
                                         tirroirs.map( (tirroir, index) => (
