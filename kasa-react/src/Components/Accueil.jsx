@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-import Hotels from "./Hotels";
+import Logements from "./Logements";
 import Footer from "./footer";
 import Banner from "./Banner";
 
@@ -9,7 +9,7 @@ export default function Essai(){
         <div>
             <Nav />
             <Banner />
-            <Hotels />
+            <Logements />
             <Footer />
         </div>
    ); 

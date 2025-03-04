@@ -10,7 +10,7 @@ import data from "../data.json";
 import Tirroir from "./Tirroirs";
 
 
-export default function Details_log(){
+export default function Details_logement(){
 
     const { id } = useParams();
     const logement = data.find( (item) => item.id === id );

@@ -2,7 +2,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Accueil from './Components/Accueil';
 import Apropos from'./Components/Apropos';
-import Details_log from './Components/Details_log';
+import Details_logement from './Components/Details_logement';
 import Error404 from './Components/Error404';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Accueil/>} />
         <Route path='/Apropos' element={<Apropos/>} />
-        <Route path='/Details/:id' element={<Details_log/>} />
+        <Route path='/Details/:id' element={<Details_logement/>} />
         <Route path='*' element={<Error404/>} />
       </Routes>
     </BrowserRouter>
