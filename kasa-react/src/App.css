@@ -417,7 +417,7 @@
 
 
 
-@media screen and (max-width: 428px){
+@media screen and (max-width: 418px){
   .navbar > img{
     width: 110px !important;
     height: 36.8px !important;
@@ -617,7 +617,7 @@
 
 
 }
-@media (min-width: 390px) and (max-width:428px){
+@media (min-width: 376px) and (max-width:418px){
 
   .hidden-point {
     width: 90% !important;
